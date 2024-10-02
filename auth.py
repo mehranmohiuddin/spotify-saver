@@ -5,7 +5,7 @@ import sys
 def get_bearer_token():
     config = dotenv_values(".env")
 
-    url=config["AUTH_URL"]
+    url="https://accounts.spotify.com/api/token"
     client_id = config["CLIENT_ID"]
     client_secrets = config["CLIENT_SECRET"]
 
